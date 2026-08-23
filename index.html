@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aram Luz — Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="#inicio" class="logo">
+                <span class="logo-bracket">[</span>aram<span class="logo-accent">.</span>luz<span class="logo-bracket">]</span>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="#sobre">sobre</a>
+                <a href="#stack">stack</a>
+                <a href="#projetos">projetos</a>
+                <a href="#experiencia">experiência</a>
+                <a href="#formacao">formação</a>
+                <a href="#certificados">certificados</a>
+                <a href="#contatos" class="nav-cta">contato</a>
+            </nav>
+
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <span class="theme-icon">◐</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <nav class="nav-mobile" id="navMobile">
+            <a href="#sobre" class="mobile-link">sobre</a>
+            <a href="#stack" class="mobile-link">stack</a>
+            <a href="#projetos" class="mobile-link">projetos</a>
+            <a href="#experiencia" class="mobile-link">experiência</a>
+            <a href="#formacao" class="mobile-link">formação</a>
+            <a href="#certificados" class="mobile-link">certificados</a>
+            <a href="#contatos" class="mobile-link">contato</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <canvas id="gridCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tag reveal">
+                <span class="dot-pulse"></span>disponível para oportunidades
+            </div>
+            <h1 class="hero-name reveal delay-1">
+                <span class="name-line">Aram</span>
+                <span class="name-line accent">Luz</span>
+            </h1>
+            <p class="hero-role reveal delay-2">
+                <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-desc reveal delay-3">
+                Transformo dados brutos em decisões inteligentes. Especialista em qualidade, 
+                engenharia e automação de dados — unindo rigor técnico e comunicação clara para gerar impacto real.
+            </p>
+            <div class="hero-actions reveal delay-4">
+                <a href="#projetos" class="btn-primary">Ver Projetos</a>
+                <a href="https://www.linkedin.com/in/aram-luz-1b0ab1321" target="_blank" class="btn-ghost">LinkedIn →</a>
+            </div>
+            <div class="hero-stats reveal delay-5">
+                <div class="hstat">
+                    <span class="hstat-num">13</span>
+                    <span class="hstat-label">Projetos</span>
+                </div>
+                <div class="hstat-sep"></div>
+                <div class="hstat">
+                    <span class="hstat-num">24</span>
+                    <span class="hstat-label">Certificados</span>
+                </div>
+                <div class="hstat-sep"></div>
+                <div class="hstat">
+                    <span class="hstat-num">1.367h</span>
+                    <span class="hstat-label">de Formação</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+            <div class="section-label reveal">01 / sobre</div>
+            <div class="sobre-grid">
+                <div class="sobre-text reveal">
+                    <h2>Olá, <span class="accent">Leitor</span></h2>
+                    <p>
+                        Sou profissional de dados com experiência prática em 
+                        <strong>qualidade</strong>, <strong>tratamento</strong> e <strong>governança de dados</strong> 
+                        em ambiente ERP. Atuei na Krambeck Autopeças na coleta, validação, padronização e 
+                        higienização de bases cadastrais de produtos automotivos a partir de fontes estruturadas 
+                        e não estruturadas, garantindo integridade e confiabilidade da informação.
+                    </p>
+                    <p>
+                        Desenvolvo <strong>automações RPA</strong> com Python (Pywinauto e Selenium) para eliminar 
+                        tarefas manuais repetitivas, além de elaborar relatórios analíticos de acompanhamento 
+                        de metas e desempenho comercial.
+                    </p>
+                    <p>
+                        Tenho facilidade em traduzir análises técnicas para diferentes públicos — competência 
+                        também reforçada pela minha vivência em teatro de improviso.
+                    </p>
+                    <div class="sobre-links">
+                        <a href="https://github.com/Aram-Bohmann" target="_blank" class="inline-link">GitHub ↗</a>
+                        <a href="mailto:arambohmannleitedaluz@gmail.com" class="inline-link">Email ↗</a>
+                    </div>
+                </div>
+                <div class="sobre-card reveal delay-1">
+                    <div class="sobre-photo-wrap">
+                        <img src="Imagens/foto-aram.png" alt="Foto de Aram" class="sobre-photo">
+                        <div class="sobre-photo-border"></div>
+                    </div>
+                    <div class="sobre-info">
+                        <p class="sobre-name">Aram Bohmann Leite da Luz</p>
+                        <div class="sobre-roles">
+                            <span>Data Scientist</span>
+                            <span>Data Engineer</span>
+                            <span>Data Analyst</span>
+                        </div>
+                        <div class="sobre-badges">
+                            <span class="badge">🎯 Data Quality</span>
+                            <span class="badge">🎓 UNINTER 2026–28</span>
+                            <span class="badge">📍 SC, Brasil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STACK TÉCNICA -->
+    <section class="section stack" id="stack">
+        <div class="container">
+            <div class="section-label reveal">02 / stack técnica</div>
+            <h2 class="section-title reveal">Ferramentas & <span class="accent">Tecnologias</span></h2>
+
+            <div class="stack-grid reveal delay-1">
+                <div class="stack-group">
+                    <div class="stack-group-label">Linguagens</div>
+                    <div class="stack-items">
+                        <div class="stack-item"><img src="Imagens/icon-python.png" alt="Python">Python</div>
+                        <div class="stack-item"><img src="Imagens/icon-R.png" alt="R" id="R">Linguagem R</div>
+                        <div class="stack-item"><img src="Imagens/icon-java.png" alt="Java">Java</div>
+                        <div class="stack-item"><img src="Imagens/icon-JavaScript.png" alt="JS">JavaScript</div>
+                        <div class="stack-item"><img src="Imagens/icon-HTML5.png" alt="HTML">HTML</div>
+                        <div class="stack-item"><img src="Imagens/icon-CSS3.png" alt="CSS">CSS</div>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <div class="stack-group-label">Bancos de Dados</div>
+                    <div class="stack-items">
+                        <div class="stack-item"><img src="Imagens/icon-mysql.png" alt="MySQL">MySQL</div>
+                        <div class="stack-item"><img src="Imagens/icon-SQL-Server.png" alt="SQL Server">SQL Server</div>
+                        <div class="stack-item"><span class="icon-text">🐘</span>PostgreSQL</div>
+                        <div class="stack-item"><span class="icon-text">🍃</span>MongoDB</div>
+                        <div class="stack-item"><span class="icon-text">⚡</span>NoSQL</div>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <div class="stack-group-label">Visualização & BI</div>
+                    <div class="stack-items">
+                        <div class="stack-item"><img src="Imagens/icon-powerbi.png" alt="Power BI">Power BI</div>
+                        <div class="stack-item"><span class="icon-text">📊</span>Tableau</div>
+                        <div class="stack-item"><span class="icon-text">🎯</span>Streamlit</div>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <div class="stack-group-label">Big Data & Cloud</div>
+                    <div class="stack-items">
+                        <div class="stack-item"><span class="icon-text">⚡</span>Spark</div>
+                        <div class="stack-item"><span class="icon-text">🐘</span>Hadoop</div>
+                        <div class="stack-item"><span class="icon-text">☁️</span>AWS</div>
+                        <div class="stack-item"><span class="icon-text">🔷</span>Azure</div>
+                        <div class="stack-item"><span class="icon-text">🟡</span>GCP</div>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <div class="stack-group-label">IA & LLMs</div>
+                    <div class="stack-items">
+                        <div class="stack-item"><span class="icon-text">🦜</span>LangChain</div>
+                        <div class="stack-item"><span class="icon-text">🤗</span>Hugging Face</div>
+                        <div class="stack-item"><span class="icon-text">🤖</span>OpenAI API</div>
+                        <div class="stack-item"><span class="icon-text">🦙</span>Ollama</div>
+                        <div class="stack-item"><span class="icon-text">📈</span>MLflow</div>
+                    </div>
+                </div>
+                <div class="stack-group">
+                    <div class="stack-group-label">DevOps & Ferramentas</div>
+                    <div class="stack-items">
+                        <div class="stack-item"><img src="Imagens/icon-git.png" alt="Git">Git</div>
+                        <div class="stack-item"><img src="Imagens/icon-github.png" alt="GitHub">GitHub</div>
+                        <div class="stack-item"><img src="Imagens/icon-Visual-Studio-Code.png" alt="VS Code">VS Code</div>
+                        <div class="stack-item"><img src="Imagens/icon-figma.png" alt="Figma">Figma</div>
+                        <div class="stack-item"><span class="icon-text">🔍</span>Elasticsearch</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ticker -->
+            <div class="ticker-wrap reveal delay-2">
+                <div class="ticker-track">
+                    <span>Python</span><span class="sep">·</span>
+                    <span>Power BI</span><span class="sep">·</span>
+                    <span>Machine Learning</span><span class="sep">·</span>
+                    <span>ETL / ELT</span><span class="sep">·</span>
+                    <span>SQL</span><span class="sep">·</span>
+                    <span>Spark</span><span class="sep">·</span>
+                    <span>LangChain</span><span class="sep">·</span>
+                    <span>Streamlit</span><span class="sep">·</span>
+                    <span>AWS</span><span class="sep">·</span>
+                    <span>MongoDB</span><span class="sep">·</span>
+                    <span>R</span><span class="sep">·</span>
+                    <span>MLflow</span><span class="sep">·</span>
+                    <span>RPA</span><span class="sep">·</span>
+                    <span>Tableau</span><span class="sep">·</span>
+                    <!-- duplicate -->
+                    <span>Python</span><span class="sep">·</span>
+                    <span>Power BI</span><span class="sep">·</span>
+                    <span>Machine Learning</span><span class="sep">·</span>
+                    <span>ETL / ELT</span><span class="sep">·</span>
+                    <span>SQL</span><span class="sep">·</span>
+                    <span>Spark</span><span class="sep">·</span>
+                    <span>LangChain</span><span class="sep">·</span>
+                    <span>Streamlit</span><span class="sep">·</span>
+                    <span>AWS</span><span class="sep">·</span>
+                    <span>MongoDB</span><span class="sep">·</span>
+                    <span>R</span><span class="sep">·</span>
+                    <span>MLflow</span><span class="sep">·</span>
+                    <span>RPA</span><span class="sep">·</span>
+                    <span>Tableau</span><span class="sep">·</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section projetos" id="projetos">
+        <div class="container">
+            <div class="section-label reveal">03 / projetos</div>
+            <h2 class="section-title reveal">Projetos em <span class="accent">Destaque</span></h2>
+
+            <div class="proj-meta reveal delay-1">
+                <div class="proj-stat"><span>13</span> projetos</div>
+                <div class="proj-stat"><span>3</span> online</div>
+                <div class="proj-stat"><span>8</span> tecnologias</div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="filtros reveal delay-1">
+                <button class="filtro active" data-f="todos">Todos</button>
+                <button class="filtro" data-f="python">Python</button>
+                <button class="filtro" data-f="r">R</button>
+                <button class="filtro" data-f="ml">ML</button>
+                <button class="filtro" data-f="web">Web</button>
+                <button class="filtro" data-f="dados">Dados & SQL</button>
+            </div>
+
+            <div class="proj-grid" id="projGrid">
+
+                <!-- Dashboard Salários — DESTAQUE -->
+                <div class="proj-card featured" data-cat="python dados">
+                    <div class="proj-img">
+                        <img src="Imagens/projeto-1.png" alt="Dashboard de Análise de Salários">
+                        <div class="proj-hover">
+                            <a href="https://dashboard-salaries-python-2025-aram.streamlit.app" target="_blank" class="phover-btn">Acessar ↗</a>
+                            <a href="https://github.com/Aram-Bohmann/Dashboard-Salaries-Python" target="_blank" class="phover-btn outline">GitHub</a>
+                        </div>
+                        <div class="live-badge">● Live</div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-dados">Análise de Dados</span>
+                            <span class="tag tag-dados">Streamlit</span>
+                        </div>
+                        <h3>Dashboard de Análise de Salários na Área de Dados</h3>
+                        <div class="proj-footer">
+                            <a href="https://dashboard-salaries-python-2025-aram.streamlit.app" target="_blank" class="plink primary">Acessar →</a>
+                            <a href="https://github.com/Aram-Bohmann/Dashboard-Salaries-Python" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SQL Chat Autopeça -->
+                <div class="proj-card" data-cat="python dados web">
+                    <div class="proj-img">
+                        <img src="Imagens/Captura de tela 2026-04-05 154630.png" alt="SQL Chat Autopeça">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/autopecas-sql-chat" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-dados">SQL</span>
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-web">Web</span>
+                        </div>
+                        <h3>SQL Chat Autopeça</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/autopecas-sql-chat" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Busca Inteligente Autopeças -->
+                <div class="proj-card" data-cat="python dados web">
+                    <div class="proj-img">
+                        <img src="Imagens/busca-autopecas.png" alt="Sistema de Busca Inteligente">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Sistema-de-busca-inteligente-para-estoque-de-autopecas" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-dados">Elasticsearch</span>
+                            <span class="tag tag-web">Web</span>
+                        </div>
+                        <h3>Sistema de Busca Inteligente — Autopeças</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Sistema-de-busca-inteligente-para-estoque-de-autopecas" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <!-- Chatbot Offline -->
+                <div class="proj-card" data-cat="python ml">
+                    <div class="proj-img">
+                        <img src="Imagens/chatbot.png" alt="Chatbot Offline">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/ChatBot-Offline-Gwen/tree/main" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-ml">Machine Learning</span>
+                        </div>
+                        <h3>Chatbot Offline</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/ChatBot-Offline-Gwen/tree/main" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modelo Preditivo Livros -->
+                <div class="proj-card" data-cat="python ml">
+                    <div class="proj-img">
+                        <img src="Imagens/projeto-9.png" alt="Modelo Preditivo de Preços de Livros">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Modelo-Preditivo-de-Precos-de-Livros-e-Visualizacoes" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-ml">Machine Learning</span>
+                        </div>
+                        <h3>Modelo Preditivo de Preços de Livros</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Modelo-Preditivo-de-Precos-de-Livros-e-Visualizacoes" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diabetes R -->
+                <div class="proj-card" data-cat="r ml">
+                    <div class="proj-img">
+                        <img src="Imagens/projeto-2.png" alt="Prevendo Diabetes">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Prevendo-a-ocorrencia-de-diabetes-Linguagem-R" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-r">Linguagem R</span>
+                            <span class="tag tag-ml">Machine Learning</span>
+                        </div>
+                        <h3>Prevendo a Ocorrência de Diabetes</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Prevendo-a-ocorrencia-de-diabetes-Linguagem-R" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <!-- Inventário Autopeças -->
+                <div class="proj-card" data-cat="python web">
+                    <div class="proj-img">
+                        <img src="Imagens/inventario.png" alt="Inventário Autopeças">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Sistema-de-Inventario-de-Autope-as" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-web">Web</span>
+                        </div>
+                        <h3>Sistema de Inventário de Autopeças</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Sistema-de-Inventario-de-Autope-as" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Viagens R -->
+                <div class="proj-card" data-cat="r dados">
+                    <div class="proj-img">
+                        <img src="Imagens/projeto-3.png" alt="Viagens a Serviço">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Analisando-dados-ViagensServico-Linguagem-R/tree/main" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-r">Linguagem R</span>
+                            <span class="tag tag-dados">Análise de Dados</span>
+                        </div>
+                        <h3>Análise de Dados de Viagens a Serviço</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Analisando-dados-ViagensServico-Linguagem-R/tree/main" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIB Per Capita -->
+                <div class="proj-card" data-cat="python dados">
+                    <div class="proj-img">
+                        <img src="Imagens/pib_per_capita.png" alt="PIB Per Capita">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Grafico-de-Corrida-PIB-Per-Capita" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-python">Python</span>
+                            <span class="tag tag-dados">Análise de Dados</span>
+                        </div>
+                        <h3>Gráfico de Corrida — PIB Per Capita</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Grafico-de-Corrida-PIB-Per-Capita" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TCC Literatura -->
+                <div class="proj-card" data-cat="web dados">
+                    <div class="proj-img">
+                        <img src="Imagens/projeto-10.png" alt="TCC Literatura">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/TCC-Aplicacao-Movel-de-Literatura-Digital" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-dados">SQL</span>
+                            <span class="tag tag-web">Web</span>
+                        </div>
+                        <h3>TCC — Aplicação Móvel de Literatura Digital</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/TCC-Aplicacao-Movel-de-Literatura-Digital" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diagramas EER -->
+                <div class="proj-card" data-cat="dados">
+                    <div class="proj-img">
+                        <img src="Imagens/projeto-6.png" alt="Diagramas EER">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Praticando-Diagramas-EER/tree/main" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-dados">Modelagem</span>
+                            <span class="tag tag-dados">MySQL</span>
+                        </div>
+                        <h3>Praticando Diagramas EER</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Praticando-Diagramas-EER/tree/main" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Literatura -->
+                <div class="proj-card" data-cat="web">
+                    <div class="proj-img">
+                        <img src="Imagens/projeto-7.png" alt="App Literatura">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/App-de-Literatura" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-web">Cordova</span>
+                            <span class="tag tag-web">Web</span>
+                        </div>
+                        <h3>App de Literatura Digital</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/App-de-Literatura" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Pet Shop -->
+                <div class="proj-card" data-cat="web">
+                    <div class="proj-img">
+                        <img src="Imagens/petshop.png" alt="Dashboard Pet Shop">
+                        <div class="proj-hover">
+                            <a href="https://github.com/Aram-Bohmann/Dashboard-Vendas-PetShop" target="_blank" class="phover-btn">GitHub ↗</a>
+                        </div>
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-tags">
+                            <span class="tag tag-dados">Análise de Dados</span>
+                            <span class="tag tag-dados">Power BI</span>
+                        </div>
+                        <h3>Dashboard Pet Shop</h3>
+                        <div class="proj-footer">
+                            <a href="https://github.com/Aram-Bohmann/Dashboard-Vendas-PetShop" target="_blank" class="plink">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /proj-grid -->
+
+            <div class="proj-fade" id="projFade"></div>
+            <button class="btn-mais" id="btnProjMais">
+                <span>Ver mais projetos</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="section experiencia" id="experiencia">
+        <div class="container">
+            <div class="section-label reveal">04 / experiência</div>
+            <h2 class="section-title reveal">Experiência <span class="accent">Profissional</span></h2>
+
+            <div class="timeline reveal delay-1">
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card">
+                        <div class="tl-header">
+                            <div>
+                                <span class="tl-badge">Emprego Atual</span>
+                                <h3 class="tl-cargo">Auxiliar de Compras</h3>
+                                <p class="tl-empresa">Krambeck Autopeças</p>
+                                <p class="tl-periodo">fev 2026 – presente</p>
+                            </div>
+                        </div>
+                        <div class="tl-desc">
+                            <p>Atuei na garantia da <strong>qualidade e integridade de dados cadastrais</strong> em ambiente ERP no setor automotivo, dando suporte ao time de compras:</p>
+                            <ul>
+                                <li>Coleta, compilação e análise de dados de produtos automotivos para composição e manutenção de catálogo eletrônico</li>
+                                <li>Padronização e classificação de registros no ERP (nomenclatura, categorização e codificação)</li>
+                                <li>Auditorias e processos de <strong>data cleaning</strong> na base cadastral — eliminação de duplicidades, inconsistências e informações desatualizadas</li>
+                                <li>Desenvolvimento de <strong>automações RPA</strong> com Python (Pywinauto + Selenium) para reduzir tempo de processamento e aumentar a eficiência operacional</li>
+                                <li>Elaboração de relatórios analíticos de acompanhamento de metas de faturamento e desempenho de campanhas promocionais</li>
+                            </ul>
+                            <div class="tl-stack">
+                                <span>Python</span>
+                                <span>Pywinauto</span>
+                                <span>Selenium</span>
+                                <span>RPA</span>
+                                <span>Data Quality</span>
+                                <span>ERP</span>
+                                <span>ETL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section class="section formacao" id="formacao">
+        <div class="container">
+            <div class="section-label reveal">05 / formação</div>
+            <h2 class="section-title reveal">Formação <span class="accent">Acadêmica</span></h2>
+
+            <div class="form-grid reveal delay-1">
+                <div class="form-card">
+                    <div class="form-year">2026–2028</div>
+                    <img src="Imagens/Uninter.png" alt="UNINTER" class="form-logo">
+                    <h3>Tecnólogo em Ciência de Dados</h3>
+                    <p class="form-inst">UNINTER</p>
+                    <p class="form-desc">Graduação tecnológica com foco em ciência de dados, análise estatística e inteligência artificial aplicada.</p>
+                    <div class="form-status current">Em andamento</div>
+                </div>
+                <div class="form-card">
+                    <div class="form-year">2023–2025</div>
+                    <img src="Imagens/Cedup-Timbó.jpg" alt="Cedup Timbó" class="form-logo">
+                    <h3>Técnico em Ciência de Dados</h3>
+                    <p class="form-inst">Cedup Timbó</p>
+                    <p class="form-desc">Formação técnica focada em análise de dados, machine learning, modelagem estatística, desenvolvimento web e banco de dados. Python, R, SQL, Power BI e metodologias ágeis.</p>
+                    <div class="form-status done">Concluído</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section class="section certificados" id="certificados">
+        <div class="container">
+            <div class="section-label reveal">06 / certificados</div>
+            <h2 class="section-title reveal">Certificados & <span class="accent">Conquistas</span></h2>
+
+            <div class="cert-meta reveal delay-1">
+                <div class="cert-stat"><span>25</span> certificados</div>
+                <div class="cert-stat"><span>1.433h</span> de formação</div>
+                <div class="cert-stat"><span>8</span> instituições</div>
+            </div>
+
+            <div class="filtros reveal delay-1">
+                <button class="filtro active" data-fc="todos">Todos</button>
+                <button class="filtro" data-fc="dados">Dados & BI</button>
+                <button class="filtro" data-fc="ia">IA & ML</button>
+                <button class="filtro" data-fc="dev">Dev & BD</button>
+                <button class="filtro" data-fc="design">Design</button>
+            </div>
+
+            <div class="cert-grid" id="certGrid">
+                <!-- DADOS & BI -->
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">30h</span></div><h4>Fundamentos de Análise de Dados</h4><div class="cc-bot"><span class="cinst">Cisco</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">30h</span></div><h4>Excel Avançado</h4><div class="cc-bot"><span class="cinst">Enap</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">20h</span></div><h4>Python for Data Science</h4><div class="cc-bot"><span class="cinst">IBM</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">20h</span></div><h4>Data Analysis with Python</h4><div class="cc-bot"><span class="cinst">IBM</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">20h</span></div><h4>Data Visualization with Python</h4><div class="cc-bot"><span class="cinst">IBM</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">24h</span></div><h4>Data Science e Inteligência Artificial</h4><div class="cc-bot"><span class="cinst">DSA</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">75h</span></div><h4>Power BI Para Business Intelligence e Data Science</h4><div class="cc-bot"><span class="cinst">DSA</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">20h</span></div><h4>Análise de Dados em Linguagem R</h4><div class="cc-bot"><span class="cinst">Enap</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">25h</span></div><h4>Soluções Preditivas Baseadas em Dados</h4><div class="cc-bot"><span class="cinst">Enap</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">40h</span></div><h4>Business Intelligence (BI)</h4><div class="cc-bot"><span class="cinst">FIAP</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">60h</span></div><h4>Big Data & Analytics</h4><div class="cc-bot"><span class="cinst">FIAP</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">24h</span></div><h4>Fundamentos da Engenharia de Dados</h4><div class="cc-bot"><span class="cinst">DSA</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span></div><h4>Automação de Processos através da RPA para Transformação Digital</h4><div class="cc-bot"><span class="cinst">Enap</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="dados"><div class="cc-top"><span class="ctag ctag-dados">Dados & BI</span><span class="choras">25h</span></div><h4>Visualização de Dados Aplicada à Transformação Digital</h4><div class="cc-bot"><span class="cinst">Enap</span><span class="cano">2025</span></div></div>
+                <!-- IA & ML -->
+                <div class="cert-card" data-cc="ia"><div class="cc-top"><span class="ctag ctag-ia">IA & ML</span><span class="choras">40h</span></div><h4>Inteligência Artificial II</h4><div class="cc-bot"><span class="cinst">IFTM</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="ia"><div class="cc-top"><span class="ctag ctag-ia">IA & ML</span><span class="choras">40h</span></div><h4>Inteligência Artificial I</h4><div class="cc-bot"><span class="cinst">IFTM</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="ia"><div class="cc-top"><span class="ctag ctag-ia">IA & ML</span><span class="choras">80h</span></div><h4>Inteligência Artificial e Computacional</h4><div class="cc-bot"><span class="cinst">FIAP</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="ia"><div class="cc-top"><span class="ctag ctag-ia">IA & ML</span><span class="choras">80h</span></div><h4>Inteligência Artificial Responsável</h4><div class="cc-bot"><span class="cinst">FIAP</span><span class="cano">2026</span></div></div>
+                <!-- DEV & BD -->
+                <div class="cert-card" data-cc="dev"><div class="cc-top"><span class="ctag ctag-dev">Dev & BD</span><span class="choras">200h</span></div><h4>Programador Web</h4><div class="cc-bot"><span class="cinst">IFRS</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dev"><div class="cc-top"><span class="ctag ctag-dev">Dev & BD</span><span class="choras">200h</span></div><h4>Administrador de Banco de Dados</h4><div class="cc-bot"><span class="cinst">IFRS</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dev"><div class="cc-top"><span class="ctag ctag-dev">Dev & BD</span><span class="choras">20h</span></div><h4>Estrutura de Dados</h4><div class="cc-bot"><span class="cinst">IFRS</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dev"><div class="cc-top"><span class="ctag ctag-dev">Dev & BD</span><span class="choras">20h</span></div><h4>Banco de Dados: Oracle PL/SQL</h4><div class="cc-bot"><span class="cinst">IFRS</span><span class="cano">2025</span></div></div>
+                <div class="cert-card" data-cc="dev"><div class="cc-top"><span class="ctag ctag-dev">Dev & BD</span><span class="choras">20h</span></div><h4>Desvendando a Indústria 4.0</h4><div class="cc-bot"><span class="cinst">SENAI/SC</span><span class="cano">2020</span></div></div>
+                <!-- DESIGN  -->
+                <div class="cert-card" data-cc="design"><div class="cc-top"><span class="ctag ctag-design">Design</span><span class="choras">160h</span></div><h4>Game Designer</h4><div class="cc-bot"><span class="cinst">FIAP</span><span class="cano">2026</span></div></div>
+                <div class="cert-card" data-cc="design"><div class="cc-top"><span class="ctag ctag-design">Design</span><span class="choras">160h</span></div><h4>Design Gráfico</h4><div class="cc-bot"><span class="cinst">FIAP</span><span class="cano">2026</span></div></div>
+            </div>
+
+            <div class="cert-fade" id="certFade"></div>
+            <button class="btn-mais" id="btnCertMais">
+                <span>Ver mais certificados</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <footer class="footer" id="contatos">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-text reveal">
+                    <p class="footer-eyebrow">Pronto para colaborar?</p>
+                    <h2>Vamos <span class="accent">conversar</span></h2>
+                    <p class="footer-sub">Busco oportunidades em Ciência de Dados, Engenharia de Dados ou Análise de Dados onde possa contribuir com soluções de impacto em ambientes dinâmicos e orientados a dados.</p>
+                </div>
+                <div class="footer-links reveal delay-1">
+                    <a href="mailto:arambohmannleitedaluz@gmail.com" class="footer-link-card">
+                        <span class="flc-icon">✉</span>
+                        <div>
+                            <p class="flc-label">Email</p>
+                            <p class="flc-val">arambohmannleitedaluz@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aram-luz-1b0ab1321" target="_blank" class="footer-link-card">
+                        <span class="flc-icon">in</span>
+                        <div>
+                            <p class="flc-label">LinkedIn</p>
+                            <p class="flc-val">aram-luz-1b0ab1321</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Aram-Bohmann" target="_blank" class="footer-link-card">
+                        <span class="flc-icon">gh</span>
+                        <div>
+                            <p class="flc-label">GitHub</p>
+                            <p class="flc-val">Aram-Bohmann</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bar reveal">
+                <span>© 2026 Aram Bohmann Leite da Luz</span>
+                <span class="footer-stack">Data Scientist · Data Engineer · Data Analyst</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
